@@ -25,7 +25,7 @@
 
 ### Overview
 
-_**BEAT_BOX** A music player app that enables the user to take control and create their own DJ name and custom playlist. ._
+_**BEAT_BOX** A music player app that enables the user to take control and have fun with it by generating their own DJ name and custom playlist. ._
 
 <br>
 
@@ -51,7 +51,7 @@ _**BEAT_BOX** A music player app that enables the user to take control and creat
 
 #### Goals
 
-- _Get your own DJ name_
+- _Generate your own DJ name each time user visits site_
 - _Search different tracks by aritst or song name_
 - _Use API to render the tracks to the screen_
 - _Use Storybook to create 6 components_
@@ -139,7 +139,7 @@ src
 
 |  Function  | Description                                |
 | :--------: | :----------------------------------------- |
-|  | __ |
+|            |                                            |
 
 <br>
 
@@ -149,11 +149,13 @@ My plan to come over weakness is to review notes, google, use houston-we-have-a-
 
 ### Post-MVP
 
-- _Have playlist play directly from app_
 - _Make user profile_
-- _Save multiple playlists_
 - _Have a favorite artist list_
 - _Have a favorite song list_
+- _Have different playlist skins_
+- _Have playlist play directly from app_
+- _Use a second API to generate DJ Names_
+- _Create a local storage to store DJ Names and multiple playlists
 
 
 
