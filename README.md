@@ -119,13 +119,18 @@ src
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Pseudocode          |    M     |     2 hrs      |     TBD       |     TBD     |
-| Add Playlist        |    H     |     4 hrs      |     TBD       |     TBD     |
-| CSS Styling         |    H     |     12 hrs     |     TBD       |     TBD     |
-| Basic React Code    |    H     |     14 hrs     |     TBD       |     TBD     |
-| Add Clickable Buttons |  M     |     3 hrs      |     TBD       |     TBD     |
+| Nav Bar             |    L     |     1 hr       |     TBD       |     TBD     |
+| Footer              |    L     |     1 hr       |     TBD       |     TBD     |
+| Basic React Code    |    H     |     6 hrs      |     TBD       |     TBD     |
+| Add Clickable Buttons |  M     |     4 hrs      |     TBD       |     TBD     |
+| Basic CSS Styling   |    M     |     6 hrs      |     TBD       |     TBD     |
+| Button Styling      |    H     |     4 hrs      |     TBD       |     TBD     |
+| Add Playlist        |    H     |     6 hrs      |     TBD       |     TBD     |
+| Playlist Styling    |    H     |     5 hrs      |     TBD       |     TBD     |
+| Name Creater w .json|    H     |     6 hrs      |     TBD       |     TBD     |
 | Working with API    |    H     |     6 hrs      |     TBD       |     TBD     |
 | Storybook component |    H     |     8 hrs      |     TBD       |     TBD     |
-| TOTAL               |          |     50 hrs     |     TBD       |     TBD     |
+| TOTAL               |          |     55 hrs     |     TBD       |     TBD     |
 
 <br>
 
