@@ -33,15 +33,15 @@ _**BEAT_BOX** A music player app that enables the user to take control and have 
 
 - Mobile Wireframe
 
-![Mobile_Wireframe](https://i.imgur.com/BqpT3m9.png)
+![Mobile_Wireframe](https://i.imgur.com/Joxwt4S.png)
 
 - Tablet Wireframe
 
-![Tablet_Wireframe](https://i.imgur.com/JNbusc2.png)
+![Tablet_Wireframe](https://i.imgur.com/N61UBx2.png)
 
 - Desktop Wireframe
 
-![Desktop_Wireframe](https://i.imgur.com/Cibr4hg.png)
+![Desktop_Wireframe](https://i.imgur.com/PU6V6oK.png)
 
 
 
