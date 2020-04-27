@@ -25,7 +25,7 @@
 
 ### Overview
 
-_**BEAT_BOX** A music player app that enables the user to take control and have fun with it by generating their own DJ name and custom playlist. ._
+_**BEAT_BOX** A music player app that enables the user to take control and have fun with it by creating their own DJ name and custom playlist._
 
 <br>
 
@@ -51,11 +51,11 @@ _**BEAT_BOX** A music player app that enables the user to take control and have 
 
 #### Goals
 
-- _Generate your own DJ name each time user visits site_
+- _Placeholder where people can enter their own DJ name_
 - _Search different tracks by aritst or song name_
 - _Use API to render the tracks to the screen_
-- _Use Storybook to create 6 components_
 - _Create a search button for artist or song_
+- _Use Storybook to create 6 components_
 
 <br>
 
@@ -105,7 +105,7 @@ src
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
 | Header        | functional |   n   |   n   | _The header will contain the logo and project name._               |
-| DJ Name       | functional |   n   |   n   | _The DJ Name will display custom name for each User._       |
+| DJ Name       | functional |   n   |   n   | _The DJ Name will be enterd in by the user._       |
 | Search Bar    | functional |   y   |   y   | _The Search Bar will take user input by song or artist._      |
 | Play List     | class      |   y   |   y   | _The play list will render the songs via props._                 |
 | Search Button | functional |   n   |   n   | _The search buton will be the event handler to generate song results._ |
@@ -127,10 +127,10 @@ src
 | Button Styling      |    H     |     4 hrs      |     TBD       |     TBD     |
 | Add Playlist        |    H     |     6 hrs      |     TBD       |     TBD     |
 | Playlist Styling    |    H     |     5 hrs      |     TBD       |     TBD     |
-| Name Creater w .json|    H     |     6 hrs      |     TBD       |     TBD     |
+| DJ Name placeholder |    L     |     1 hrs      |     TBD       |     TBD     |
 | Working with API    |    H     |     6 hrs      |     TBD       |     TBD     |
 | Storybook component |    H     |     8 hrs      |     TBD       |     TBD     |
-| TOTAL               |          |     55 hrs     |     TBD       |     TBD     |
+| TOTAL               |          |     50 hrs     |     TBD       |     TBD     |
 
 <br>
 
