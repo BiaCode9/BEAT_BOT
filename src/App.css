@@ -1,0 +1,26 @@
+header {
+  border: 1px solid black;
+}
+
+
+p {
+border: 1px solid black;
+
+}
+
+
+footer {
+  border: 1px solid black;
+}
+
+.djname {
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.playlist {
+  display: flex;
+  flex-direction: column;
+}
