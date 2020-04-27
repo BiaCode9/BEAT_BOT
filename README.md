@@ -155,7 +155,7 @@ My plan to come over weakness is to review notes, google, use houston-we-have-a-
 - _Have different playlist skins_
 - _Have playlist play directly from app_
 - _Use a second API to generate DJ Names_
-- _Create a local storage to store DJ Names and multiple playlists
+- _Create a local storage to store DJ Names and multiple playlists_
 
 
 
