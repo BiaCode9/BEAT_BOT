@@ -10,13 +10,18 @@ const searchResults = (props) => {
   return (
     <>
       {
-        // props.tracks.trackmatches.track.map(item =>
-        //   <div>
-        //     {/* key={response.data.results.trackmatches.track} */}
-        //           track={item}
-        //   </div>
-        // )
-        console.log(props.tracks)
+        props.tracks.map(item => (
+          <div>
+            {/* key={response.data.results.trackmatches.track} */}
+            <h1>{item.name}</h1>
+            
+            <h2>{item.artist}</h2>
+            
+            {item.url}
+           
+          </div>
+        )
+        )
       }
     </>
   )

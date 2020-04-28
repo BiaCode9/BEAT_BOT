@@ -14,33 +14,30 @@ function App() {
   const [search, updateSearch] = useState('')
   const [song, updateSong] = useState([])
 
-  useEffect((e) => {
-    apiCall()
-  }, [])
 
   // updateTrack(response.results.track.name)
 
 
   const getTracks = async (e) => {
     e.preventDefault();
-    apiCall(search)
+    await apiCall(search)
   }
 
 
   const apiCall = async () => {
     const response = await axios({
-      url: "http://ws.audioscrobbler.com/2.0/?method=track.search&api_key=9357323b21f3ac3a16289e7e62479e88&format=json",
+      url: `http://ws.audioscrobbler.com/2.0/?method=track.search&track=${search}&api_key=9357323b21f3ac3a16289e7e62479e88&format=json`,
       params: {
         track: search,
         limit: 8
       }
     })
-
-    updateSong(response.data.results)
+    console.log(response)
+    updateSong(response.data.results.trackmatches.track)
   }
 
   return (
-
+    <body>
     <div className="App">
       <header className="App-header">
         <React.Fragment>
@@ -60,24 +57,22 @@ function App() {
           </input>
         </div>
         {/* <button type="button">Create</button> ... Enter will be the on Submit ... will just the name show up in my particular font/size and box will disappear? */}
-        <form className="searchResults">
+        <form onSubmit={getTracks} className="searchResults">
           <input
             type="text"
             placeholder="Track Search"
             value={search}
             onChange={(e) => updateSearch(e.target.value)} />
 
-          <button onClick={getTracks} type="button">+ Add Song</button>
+          <button type="submit">+ Add Song</button>
 
         </form>
         <div>
           {/* <Route path='/Playlist'> */}
 
-          <Searchresults
-
+          {song.length ? <Searchresults
             tracks={song}
-
-          />
+          /> : null}
 
           {/* </Route> */}
         </div>
@@ -86,7 +81,8 @@ function App() {
 
       <Footer />
 
-    </div>
+      </div>
+      </body>
   );
 
 }
