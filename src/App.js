@@ -1,33 +1,36 @@
 import React, { useEffect, useState } from 'react';
+import { Route } from 'react';
 import './App.css';
 import axios from "axios"
-
 
 function App() {
 
   const [track, updateTrack] = useState([])
+  // const [limit, setLimit] = useState([8])
 
-  useEffect(() => {
-
+  useEffect((e) => {
     apiCall()
-
   }, [])
+
+  // updateTrack(response.results.track.name)
+
+
+  const getTracks = async (e) => {
+    e.preventDefault();
+    console.log(track)
+  } 
 
 
   const apiCall = async () => {
     const response = await axios({
       url: "http://ws.audioscrobbler.com/2.0/?method=track.search&api_key=9357323b21f3ac3a16289e7e62479e88&format=json",
       params: {
-        track: "Believe"
+        track: "",
       }
     })
+        
     console.log(response)
   }
-  // updateTrack(response.results.track.name)
-
-
-
-
 
   return (
 
@@ -38,20 +41,27 @@ function App() {
         </nav>
       </header>
       <main>
-        <form className="djname">
-          <input type="text" placeholder="Create Your Own DJ Name"></input>
-          {/* <button type="button">Create</button> ... Enter will be the on Submit ... will just the name show up in my particular font/size and box will disappear? */}
-        </form>
+        <div>
+          <input
+            type="text"
+            id="djname"
+            placeholder="Create Your Own DJ Name">
+          </input>
+        </div>
+        {/* <button type="button">Create</button> ... Enter will be the on Submit ... will just the name show up in my particular font/size and box will disappear? */}
         <form className="playlist">
-          <input type="text" placeholder="Track Search"></input>
-          <button type="button">+ Add Song</button>
+          <input
+            type="text"
+            placeholder="Track Search"
+            value={track}
+            onChange={(e) => updateTrack(e.target.value)}/>
+
+          <button onClick={getTracks} type="button">+ Add Song</button>
+
         </form>
         <div>
           <p> Search Results Here </p>
-
-
         </div>
-
 
       </main>
 
@@ -59,6 +69,8 @@ function App() {
 
     </div>
   );
+
+
 }
 
 export default App;
@@ -68,4 +80,10 @@ export default App;
 
 // handleChange stores what is in the input box
 
-//Enter be onSubmit for Create a DJ name
+//Enter be onSubmit for Create a DJ name 
+
+ // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   apiCall()
+  // }
+  
