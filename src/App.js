@@ -15,9 +15,6 @@ function App() {
   const [song, updateSong] = useState([])
 
 
-  // updateTrack(response.results.track.name)
-
-
   const getTracks = async (e) => {
     e.preventDefault();
     await apiCall(search)
@@ -38,70 +35,52 @@ function App() {
 
   return (
     <body>
-    <div className="App">
-      <header className="App-header">
-        <React.Fragment>
-          <Navbar />
-          {/* <Switch> */}
-          {/* <Route exact path="/" component={App} />
+      <div className="App">
+        <header className="App-header">
+          <React.Fragment>
+            <Navbar />
+            {/* <Switch> */}
+            {/* <Route exact path="/" component={App} />
           <Route path="./Playlist" component={Playlist} /> */}
-          {/* </Switch> */}
-        </React.Fragment>
-      </header>
-      <main>
-        <div>
-          <input
-            type="text"
-            id="djname"
-            placeholder="Create Your Own DJ Name">
-          </input>
-        </div>
-        {/* <button type="button">Create</button> ... Enter will be the on Submit ... will just the name show up in my particular font/size and box will disappear? */}
-        <form onSubmit={getTracks} className="searchResults">
-          <input
-            type="text"
-            placeholder="Track Search"
-            value={search}
-            onChange={(e) => updateSearch(e.target.value)} />
+            {/* </Switch> */}
+          </React.Fragment>
+        </header>
+        <main>
+          <div>
+            <input
+              type="text"
+              id="djname"
+              placeholder="Create Your Own DJ Name">
+            </input>
+          </div>
+          <form
+            onSubmit={getTracks}>
+            <input
+              type="text"
+              placeholder="Track Search"
+              value={search}
+              onChange={(e) => updateSearch(e.target.value)} />
 
-          <button type="submit">+ Add Song</button>
+            <button type="submit">+ Add Song</button>
 
-        </form>
-        <div>
-          {/* <Route path='/Playlist'> */}
+          </form>
+          <div>
+            {/* <Route path='/Playlist'> */}
 
-          {song.length ? <Searchresults
-            tracks={song}
-          /> : null}
+            {song.length ? <Searchresults
+              tracks={song}
+            /> : null}
 
-          {/* </Route> */}
-        </div>
+            {/* </Route> */}
+          </div>
 
-      </main>
+        </main>
 
-      <Footer />
+        <Footer />
 
       </div>
-      </body>
+    </body>
   );
-
 }
 
 export default App;
-
-
-//have onSubmit attach to a form for input and button
-
-// handleChange stores what is in the input box
-
-//Enter be onSubmit for Create a DJ name 
-
- // const handleSubmit = (e) => {
-  //   e.preventDefault();
-  //   apiCall()
-  // }
-
-
-  // .setStae  response.data.results.trackmatches.track
-
-  // need to map

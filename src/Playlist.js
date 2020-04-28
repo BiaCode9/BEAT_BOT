@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 const Playlist = () => {
   return (
-   
+    <h1>Playlist here
      
       
    {/* {track.map(track =>
@@ -15,7 +15,7 @@ const Playlist = () => {
           )} */}
 
 
-   
+    </h1>
   )
 }
 

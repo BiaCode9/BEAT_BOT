@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 // import { withRouter } from 'react-router-dom';
-// import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
+import './searchresults.css';
 
 const searchResults = (props) => {
-  // <h1>Search results here</h1>
+
 
 
 
@@ -11,13 +12,15 @@ const searchResults = (props) => {
     <>
       {
         props.tracks.map(item => (
-          <div>
-            {/* key={response.data.results.trackmatches.track} */}
+          <div className="searchResults">
+           
             <h1>{item.name}</h1>
             
             <h2>{item.artist}</h2>
             
-            {item.url}
+            <img src={item.image[0]} />
+            
+            <h3>{item.url}</h3>
            
           </div>
         )
