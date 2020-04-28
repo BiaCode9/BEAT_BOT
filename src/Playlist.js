@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-export function SearchForm(props) {
+
+export function Playlist() {
   return (
     <>
       <label>

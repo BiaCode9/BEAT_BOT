@@ -6,7 +6,7 @@ import axios from "axios"
 function App() {
 
   const [track, updateTrack] = useState([])
-  // const [limit, setLimit] = useState([8])
+
 
   useEffect((e) => {
     apiCall()
@@ -17,19 +17,20 @@ function App() {
 
   const getTracks = async (e) => {
     e.preventDefault();
-    console.log(track)
-  } 
+    apiCall(track)
+  }
 
 
   const apiCall = async () => {
     const response = await axios({
       url: "http://ws.audioscrobbler.com/2.0/?method=track.search&api_key=9357323b21f3ac3a16289e7e62479e88&format=json",
       params: {
-        track: "",
+        track: track,
+        limit: 8
       }
     })
-        
-    console.log(response)
+
+    console.log(response.data.results)
   }
 
   return (
@@ -54,13 +55,20 @@ function App() {
             type="text"
             placeholder="Track Search"
             value={track}
-            onChange={(e) => updateTrack(e.target.value)}/>
+            onChange={(e) => updateTrack(e.target.value)} />
 
           <button onClick={getTracks} type="button">+ Add Song</button>
 
         </form>
         <div>
-          <p> Search Results Here </p>
+          <p> Search Results Here
+            {/* {track.map(track =>
+            <Playlist
+              key={recipe.response.data.results.trackmatches.track}
+              track={track}
+            />
+          )} */}
+          </p>
         </div>
 
       </main>
@@ -69,7 +77,6 @@ function App() {
 
     </div>
   );
-
 
 }
 
@@ -86,4 +93,8 @@ export default App;
   //   e.preventDefault();
   //   apiCall()
   // }
-  
+
+
+  // .setStae  response.data.results.trackmatches.track
+
+  // need to map
