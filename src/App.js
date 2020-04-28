@@ -11,8 +11,8 @@ import Playlist from './Playlist'
 
 function App() {
 
-  const [track, updateTrack] = useState([])
-
+  const [search, updateSearch] = useState('')
+  const [song, updateSong] = useState([])
 
   useEffect((e) => {
     apiCall()
@@ -23,7 +23,7 @@ function App() {
 
   const getTracks = async (e) => {
     e.preventDefault();
-    apiCall(track)
+    apiCall(search)
   }
 
 
@@ -31,25 +31,25 @@ function App() {
     const response = await axios({
       url: "http://ws.audioscrobbler.com/2.0/?method=track.search&api_key=9357323b21f3ac3a16289e7e62479e88&format=json",
       params: {
-        track: track,
+        track: search,
         limit: 8
       }
     })
 
-    console.log(response.data.results)
+    updateSong(response.data.results)
   }
 
   return (
 
     <div className="App">
       <header className="App-header">
-      <React.Fragment>
+        <React.Fragment>
           <Navbar />
           {/* <Switch> */}
           {/* <Route exact path="/" component={App} />
           <Route path="./Playlist" component={Playlist} /> */}
           {/* </Switch> */}
-       </React.Fragment>
+        </React.Fragment>
       </header>
       <main>
         <div>
@@ -64,8 +64,8 @@ function App() {
           <input
             type="text"
             placeholder="Track Search"
-            value={track}
-            onChange={(e) => updateTrack(e.target.value)} />
+            value={search}
+            onChange={(e) => updateSearch(e.target.value)} />
 
           <button onClick={getTracks} type="button">+ Add Song</button>
 
@@ -73,10 +73,12 @@ function App() {
         <div>
           {/* <Route path='/Playlist'> */}
 
-          <Searchresults />
+          <Searchresults
 
-            {/* // tracks={track} */}
-          
+            tracks={song}
+
+          />
+
           {/* </Route> */}
         </div>
 
