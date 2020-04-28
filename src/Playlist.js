@@ -1,13 +1,22 @@
-import React, { useState } from "react";
+import React, {Component} from 'react';
+import { withRouter } from 'react-router-dom';
+import { Link } from "react-router-dom"
 
-export function Playlist() {
+const Playlist = () => {
   return (
-    <>
-      <label>
-        Name:
-        <input type="text" />
-      </label>
-      <input type="submit" value="Submit" />
-    </>
-  );
+   
+     
+      
+   {/* {track.map(track =>
+            <Playlist
+              key={response.data.results.trackmatches.track}
+              track={track}
+            />
+          )} */}
+
+
+   
+  )
 }
+
+export default withRouter(Playlist);

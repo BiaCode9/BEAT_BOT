@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Route } from 'react';
+import { Route, Switch } from 'react';
 import './App.css';
-import axios from "axios"
+import axios from "axios";
+import Navbar from './components/navbar';
+import Footer from './components/footer';
+import Searchresults from './components/searchresults';
+import Playlist from './Playlist'
+
+// import { BrowserRouter as Router } from 'react-router-dom'
 
 function App() {
 
@@ -37,9 +43,13 @@ function App() {
 
     <div className="App">
       <header className="App-header">
-        <nav>
-          <h1>BEAT BOX</h1>
-        </nav>
+      <React.Fragment>
+          <Navbar />
+          {/* <Switch> */}
+          {/* <Route exact path="/" component={App} />
+          <Route path="./Playlist" component={Playlist} /> */}
+          {/* </Switch> */}
+       </React.Fragment>
       </header>
       <main>
         <div>
@@ -50,7 +60,7 @@ function App() {
           </input>
         </div>
         {/* <button type="button">Create</button> ... Enter will be the on Submit ... will just the name show up in my particular font/size and box will disappear? */}
-        <form className="playlist">
+        <form className="searchResults">
           <input
             type="text"
             placeholder="Track Search"
@@ -61,19 +71,18 @@ function App() {
 
         </form>
         <div>
-          <p> Search Results Here
-            {/* {track.map(track =>
-            <Playlist
-              key={recipe.response.data.results.trackmatches.track}
-              track={track}
-            />
-          )} */}
-          </p>
+          {/* <Route path='/Playlist'> */}
+
+          <Searchresults />
+
+            {/* // tracks={track} */}
+          
+          {/* </Route> */}
         </div>
 
       </main>
 
-      <footer>Footer</footer>
+      <Footer />
 
     </div>
   );
