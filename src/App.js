@@ -6,24 +6,19 @@ import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Searchresults from './components/searchresults';
 import Playlist from './Playlist'
-
 // import { BrowserRouter as Router } from 'react-router-dom'
-
 function App() {
-
-
   const [name, setName] = useState('');
   const [nameFinished, setNameFinished] = useState(false);
   const [search, updateSearch] = useState('');
   const [song, updateSong] = useState([])
 
+  
 
   const getTracks = async (e) => {
     e.preventDefault();
     await apiCall(search)
   }
-
-
   const apiCall = async () => {
     const response = await axios({
       url: `http://ws.audioscrobbler.com/2.0/?method=track.search&track=${search}&api_key=9357323b21f3ac3a16289e7e62479e88&format=json`,
@@ -35,9 +30,8 @@ function App() {
     console.log(response)
     updateSong(response.data.results.trackmatches.track)
   }
-
   return (
-    <body>
+    <body >
       <div className="App">
         <header className="App-header">
           <React.Fragment>
@@ -70,27 +64,21 @@ function App() {
               placeholder="Track Search"
               value={search}
               onChange={(e) => updateSearch(e.target.value)} />
-
             <button type="submit">+ Add Song</button>
-
           </form>
           <div>
             {/* <Route path='/Playlist'> */}
-
             {song.length ? <Searchresults
               tracks={song}
             /> : null}
-
             {/* </Route> */}
           </div>
-
+            <h1>INDIVIDUAL PAGE</h1>
+            { /* the component for the individual song */ }
         </main>
-
         <Footer />
-
       </div>
     </body>
   );
 }
-
 export default App;
