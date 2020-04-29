@@ -1,7 +1,9 @@
+/* 
 
+.searchResults {
 
-searchResults {
 display: flex;
-justify-content: center;
+align-content: row;
 
-}
+
+} */

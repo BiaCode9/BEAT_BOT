@@ -11,7 +11,10 @@ import Playlist from './Playlist'
 
 function App() {
 
-  const [search, updateSearch] = useState('')
+
+  const [name, setName] = useState('');
+  const [nameFinished, setNameFinished] = useState(false);
+  const [search, updateSearch] = useState('');
   const [song, updateSong] = useState([])
 
 
@@ -46,13 +49,20 @@ function App() {
           </React.Fragment>
         </header>
         <main>
-          <div>
-            <input
-              type="text"
-              id="djname"
-              placeholder="Create Your Own DJ Name">
-            </input>
-          </div>
+          {nameFinished
+            ? <h1>{name}</h1>
+            : <div>
+              <form onSubmit={(e) => setNameFinished(true)}>
+                <input
+                  onChange={(e) => setName(e.target.value)}
+                  value={name}
+                  type="text"
+                  id="djname"
+                  placeholder="Create Your Own DJ Name">
+                </input>
+              </form>
+            </div>
+          }
           <form
             onSubmit={getTracks}>
             <input

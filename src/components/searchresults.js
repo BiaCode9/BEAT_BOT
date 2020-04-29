@@ -5,7 +5,7 @@ import './searchresults.css';
 
 const searchResults = (props) => {
 
-
+ 
 
 
   return (
@@ -17,8 +17,6 @@ const searchResults = (props) => {
             <h1>{item.name}</h1>
             
             <h2>{item.artist}</h2>
-            
-            <img src={item.image[0]} />
             
             <h3>{item.url}</h3>
            
