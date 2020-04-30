@@ -5,7 +5,8 @@ import axios from "axios";
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Searchresults from './components/searchresults';
-import Playlist from './Playlist'
+
+
 // import { BrowserRouter as Router } from 'react-router-dom'
 function App() {
   const [name, setName] = useState('');
@@ -74,7 +75,8 @@ function App() {
             {/* </Route> */}
           </div>
             <h1>INDIVIDUAL PAGE</h1>
-            { /* the component for the individual song */ }
+            { /* the component for the individual snpmnpm run start
+            npmong */ }
         </main>
         <Footer />
       </div>
