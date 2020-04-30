@@ -13,9 +13,8 @@ function App() {
   const [nameFinished, setNameFinished] = useState(false);
   const [search, updateSearch] = useState('');
   const [song, updateSong] = useState([]);
-  // const [playlist, setPlaylist] = useState([])
 
-
+  const [playlist, setPlaylist] = useState([])
 
   const getTracks = async (e) => {
     e.preventDefault();
@@ -33,17 +32,17 @@ function App() {
     console.log(response)
     updateSong(response.data.results.trackmatches.track)
 
-    // //add song to Playlist
-    // const addToPlaylist = (item) => {
-    //   if (!localStorage.getItem('playlist')) {
-    //     localStorage.setItem('playlist', JSON.stringify([]));
-    //   }
-    //   //new variable to store the song in Playlist
-    //   const newPlaylist = JSON.parse(localStorage.getItem('playlist'));
-    //   newPlaylist.push(item.name);
-    //   localStorage.setItem('playlist', JSON.stringify(newPlaylist));
-    //   setPlaylist(newPlaylist);
-    // }
+    //add song to Playlist
+    const addToPlaylist = (item) => {
+      if (!localStorage.getItem('playlist')) {
+        localStorage.setItem('playlist', JSON.stringify([]));
+      }
+      //new variable to store the song in Playlist
+      const newPlaylist = JSON.parse(localStorage.getItem('playlist'));
+      newPlaylist.push(item.name);
+      localStorage.setItem('playlist', JSON.stringify(newPlaylist));
+      setPlaylist(playlist);
+    }
 
 
   }
@@ -87,6 +86,7 @@ function App() {
             {/* <Route path='/Playlist'> */}
             {song.length ? <Searchresults
               tracks={song}
+              addToPlaylist={this && this.addToPlaylist}
             /> : null}
             {/* </Route> */}
           </div>

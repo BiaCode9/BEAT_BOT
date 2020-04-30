@@ -14,9 +14,10 @@ const searchResults = (props) => {
             <h2>{item.artist}</h2>
             <h3>{item.url}</h3>
 
-            {/* 
-            <button onClick={() => props.addToPlaylist(item)}>+ Add to Playlist</button>
-            <Link to={`/searchresults/${index}`}><h2>{props.item.name}</h2></Link> */}
+
+
+            <button onClick={() => this.props.addToPlaylist(item)}>+ Add to Playlist</button>
+            <Link to={`/Playlist/${index}`}><h2>{props.items && props.item.name}</h2></Link>
           </div>
         )
         )
