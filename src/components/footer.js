@@ -1,9 +1,25 @@
-import React from 'react';
+import React from 'react'
 
-const Footer = () => {
+// const Footer = (props) => (
+//   <h1>
+
+//   </h1>
+// )
+
+export default function footer(props) {
   return (
-    <h1>Copyright DJ BIA BIA</h1>
+
+    <footer style={props.style}>
+      {props.title}
+    </footer>
   )
+
 }
 
-export default Footer; 
+
+
+// const Nav = (props) =>
+// <nav>
+
+//     <a href="http://twitter.com"></a>
+// </nav>

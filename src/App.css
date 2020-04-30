@@ -13,6 +13,7 @@ border: 1px solid black;
 .footer {
   border: 1px solid white;
   color: white;
+  font-size: 8px;
 }
 
 .djname {
@@ -35,3 +36,26 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.button {
+  background-color: '#0069D9';
+  color: 'purple';
+  border-radius: '20px';
+  padding: '25px 50px';
+  font-size: '20px';
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* input {
+height: 100px;
+} */
