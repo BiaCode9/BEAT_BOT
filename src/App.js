@@ -12,9 +12,10 @@ function App() {
   const [name, setName] = useState('');
   const [nameFinished, setNameFinished] = useState(false);
   const [search, updateSearch] = useState('');
-  const [song, updateSong] = useState([])
+  const [song, updateSong] = useState([]);
+  // const [playlist, setPlaylist] = useState([])
 
-  
+
 
   const getTracks = async (e) => {
     e.preventDefault();
@@ -28,15 +29,30 @@ function App() {
         limit: 8
       }
     })
+
     console.log(response)
     updateSong(response.data.results.trackmatches.track)
+
+    // //add song to Playlist
+    // const addToPlaylist = (item) => {
+    //   if (!localStorage.getItem('playlist')) {
+    //     localStorage.setItem('playlist', JSON.stringify([]));
+    //   }
+    //   //new variable to store the song in Playlist
+    //   const newPlaylist = JSON.parse(localStorage.getItem('playlist'));
+    //   newPlaylist.push(item.name);
+    //   localStorage.setItem('playlist', JSON.stringify(newPlaylist));
+    //   setPlaylist(newPlaylist);
+    // }
+
+
   }
   return (
     <body >
       <div className="App">
         <header className="App-header">
+          <Navbar />
           <React.Fragment>
-            <Navbar />
             {/* <Switch> */}
             {/* <Route exact path="/" component={App} />
           <Route path="./Playlist" component={Playlist} /> */}
@@ -58,7 +74,7 @@ function App() {
               </form>
             </div>
           }
-          <form
+          <form className="gettracks"
             onSubmit={getTracks}>
             <input
               type="text"
@@ -74,11 +90,13 @@ function App() {
             /> : null}
             {/* </Route> */}
           </div>
-            <h1>INDIVIDUAL PAGE</h1>
-            { /* the component for the individual snpmnpm run start
+          <h1>INDIVIDUAL PAGE</h1>
+          { /* the component for the individual snpmnpm run start
             npmong */ }
         </main>
-        <Footer />
+        <div className="footer">
+          <Footer />
+        </div>
       </div>
     </body>
   );
