@@ -4,6 +4,7 @@ import './App.css';
 import axios from "axios";
 import Navbar from './components/navbar';
 import Footer from './components/footer';
+import Header from './components/header';
 import Searchresults from './components/searchresults';
 import Button from './components/Button';
 import Playlist from './Playlist';
@@ -35,9 +36,9 @@ function App() {
 
   }
 
-  useEffect(() => {
-    localStorage.clear()
-  })
+  // useEffect(() => {
+  //   localStorage.clear()
+  // })
 
 
   //add song to Playlist

@@ -8,7 +8,8 @@ const style = {
   color: 'purple',
   borderRadius: '20px',
   padding: '25px 50px',
-  fontSize: '20px'
+  fontSize: '20px',
+  boxShadow: '2px 3px purple'
 }
 
 

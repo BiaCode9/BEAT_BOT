@@ -1,25 +1,25 @@
-import React from 'react'
-
-// const Footer = (props) => (
-//   <h1>
-
-//   </h1>
-// )
-
-export default function footer(props) {
-  return (
-
-    <footer style={props.style}>
-      {props.title}
-    </footer>
-  )
-
-}
+// import React from 'react'
 
 
+// export default function Footer(props) {
+//   return (
 
-// const Nav = (props) =>
-// <nav>
+//     <Footer style={props.style}>
+//       {props.title}
+//     </Footer>
+//   )
 
-//     <a href="http://twitter.com"></a>
-// </nav>
+// }
+
+// export default Footer;
+
+// // const Footer = (props) => (
+// //   <footer style={props.style}>
+
+// //     {props.label}
+// //   </footer>
+// // )
+
+// // export default Button;
+
+
