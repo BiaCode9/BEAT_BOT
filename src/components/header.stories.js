@@ -16,4 +16,4 @@ const style = {
 
 
 storiesOf('Header', module)
-  .add('Header', () => <Header title="header" style={style} />)
+  .add('Header', () => <Header title="HEADER" style={style} />)

@@ -59,6 +59,7 @@ function App() {
       <header className="App-header">
         <Navbar />
 
+
       </header>
       <main>
         <Route path="/Playlist">
