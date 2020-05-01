@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react';
 import Button from './Button';
 
 const style = {
-  backgroundColor: '#0069D9',
+  backgroundColor: 'rgba(0, 105,217, .5)',
   color: 'purple',
   borderRadius: '20px',
   padding: '25px 50px',

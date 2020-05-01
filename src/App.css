@@ -1,8 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,600&family=Permanent+Marker&display=swap');
+
 header {
   border: 1px solid purple;
+  right: 0;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  color: magenta;
+  width: 100%;
+  
 }
-
-
 
 p {
 border: 1px solid black;
@@ -10,31 +17,14 @@ border: 1px solid black;
 }
 
 
-.footer {
-  border: 1px solid purple;
-  color: purple;
-  font-size: 8px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-
-  
-
-}
-
 #copyright {
 height: 40px;
 }
 
 .djname {
-
-  display: flex;
+ display: flex;
   flex-direction: column;
-
+  
 }
 
 .playlist {
@@ -85,14 +75,22 @@ ul {
   justify-content: flex-end;
 }
 
-/* input {
-font-size: 18px;
-background-color: RGB(7,99 , 144, 0.5);
-border: 1px white;
-} */
-
 .searchResults {
   text-align: center;
+}
+
+.footer {
+  border: 1px solid purple; 
+  color: magenta;
+  font-size: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;  
+  background-color: rgba(0, 0, 0, .8);
 }
 
 @media screen and (max-width: 780px) {
@@ -105,7 +103,9 @@ border: 1px white;
 
 input {
   
-  font-size: 18px;
+  font-size: 22px;
+  font-style: strong;
+  color: black;
   height: 20px;
   width: 300px;
   padding: 20px;
@@ -113,4 +113,23 @@ input {
   align-items: center;
   justify-content: center;
   background-color: light;
-}
+  background-color: rgba(0, 0, 0, .2);
+  border-radius: 20px;
+} 
+
+  Button {
+  background-color: rgba(0, 105,217, .5);
+
+  color: purple;
+  border-radius: 20px;
+  padding: 25px 50px;
+  font-size: 20px;
+  box-shadow: 2px 3px purple;
+  }
+
+
+/* 
+Namebar {
+font-size: 40px;
+
+} */

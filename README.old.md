@@ -52,9 +52,9 @@ _**BEAT_BOX** A music player app that enables the user to take control and have 
 #### Goals
 
 - _Placeholder where people can enter their own DJ name_
-- _Search different tracks by aritst or song name_
-- _Use API to render the tracks to the screen_
-- _Create a search button for artist or song_
+- _Search different songs by track title_
+- _Use API call to render the tracks to the screen_
+- _Create a search button_
 - _Use Storybook to create 6 components_
 
 <br>
@@ -83,8 +83,6 @@ _**BEAT_BOX** A music player app that enables the user to take control and have 
 ```
 src
 |__ assets/
-      |__ storybook components
-      |__ fonts
       |__ images
       |__ wireframes
 |__ components/
@@ -104,10 +102,10 @@ src
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-| Header        | functional |   n   |   n   | _The header will contain the logo and project name._               |
+| Header        | functional |   n   |   n   | _The header will contain the project name and links._               |
 | DJ Name       | functional |   n   |   n   | _The DJ Name will be enterd in by the user._       |
-| Search Bar    | functional |   y   |   y   | _The Search Bar will take user input by song or artist._      |
-| Play List     | class      |   y   |   y   | _The play list will render the songs via props._                 |
+| Search Bar    | functional |   y   |   y   | _The Search Bar will take user input by track entry._      |
+| Search List     | class      |   y   |   y   | _The play list will render in local storage.                 |
 | Search Button | functional |   n   |   n   | _The search buton will be the event handler to generate song results._ |
 | Footer        | functional |   n   |   n   | _The footer will show my name and copyright._ |
  
@@ -119,15 +117,14 @@ src
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Pseudocode          |    M     |     2 hrs      |     TBD       |     TBD     |
-| Nav Bar             |    L     |     1 hr       |     TBD       |     TBD     |
-| Footer              |    L     |     1 hr       |     TBD       |     TBD     |
+| Nav Bar             |    L     |     2 hr       |     TBD       |     TBD     |
+| Footer              |    L     |     2 hr       |     TBD       |     TBD     |
 | Basic React Code    |    H     |     6 hrs      |     TBD       |     TBD     |
-| Add Clickable Buttons |  M     |     4 hrs      |     TBD       |     TBD     |
+| Add Clickable Buttons |  M     |     5 hrs      |     TBD       |     TBD     |
 | Basic CSS Styling   |    M     |     6 hrs      |     TBD       |     TBD     |
 | Button Styling      |    H     |     4 hrs      |     TBD       |     TBD     |
-| Add Playlist        |    H     |     6 hrs      |     TBD       |     TBD     |
-| Playlist Styling    |    H     |     5 hrs      |     TBD       |     TBD     |
-| DJ Name placeholder |    L     |     1 hrs      |     TBD       |     TBD     |
+| Add Playlist        |    H     |     6 hrs      |     TBD       |     TBD     ||
+| DJ Name placeholder |    L     |     3 hrs      |     TBD       |     TBD     |
 | Working with API    |    H     |     6 hrs      |     TBD       |     TBD     |
 | Storybook component |    H     |     8 hrs      |     TBD       |     TBD     |
 | TOTAL               |          |     50 hrs     |     TBD       |     TBD     |

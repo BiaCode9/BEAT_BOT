@@ -1,13 +1,13 @@
-// import React from 'react';
-// import { storiesOf } from '@storybook/react';
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
-// import NavBar from './NavBar';
+import NavBar from './NavBar';
 
 
-// const style = {
-//   display: 'flex',
-//   justifyContent: 'flex-end',
-// }
+const style = {
+  display: 'flex',
+  justifyContent: 'flex-end',
+}
 
-// storiesOf('NavBar', module)
-//   .add('NavBar', () => <NavBar text="DJ BIA BIA" />)
+storiesOf('NavBar', module)
+  .add('NavBar', () => <NavBar text="DJ BIA BIA" style={style} />)

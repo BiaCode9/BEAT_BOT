@@ -12,7 +12,7 @@ const searchResults = (props) => {
               <h1>{item.name}</h1>
             </Link>
             <h2>{item.artist}</h2>
-            <h3>{item.url}</h3>
+
 
 
             <button onClick={() => props.addToPlaylist(item)}>+ Add to Playlist</button>
