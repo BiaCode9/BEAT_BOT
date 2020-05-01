@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Route } from 'react-router-dom';
 import './App.css';
 import axios from "axios";
-import Header from './components/Header';
 import Searchresults from './components/searchresults';
 import Button from './components/Button';
 import Playlist from './Playlist';
@@ -11,14 +10,11 @@ import SearchBar from './components/SearchBar';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
 
-
-
 function App() {
   const [name, setName] = useState('');
   const [nameFinished, setNameFinished] = useState(false);
   const [search, updateSearch] = useState('');
   const [song, updateSong] = useState([]);
-
   const [playlist, setPlaylist] = useState([])
 
   const getTracks = async (e) => {
@@ -33,20 +29,14 @@ function App() {
         limit: 20
       }
     })
-
     console.log(response)
     updateSong(response.data.results.trackmatches.track)
-
   }
-
-  // useEffect(() => {
-  //   localStorage.clear()
-  // })
-
 
   const addToPlaylist = (item) => {
     if (!localStorage.getItem('playlist')) {
-      localStorage.setItem('playlist', JSON.stringify([]));
+      localStorage.setItem('playlist', JSON.stringify([])
+      );
     }
 
     const newPlaylist = JSON.parse(localStorage.getItem('playlist'));
@@ -54,6 +44,7 @@ function App() {
     localStorage.setItem('playlist', JSON.stringify(newPlaylist));
     setPlaylist(playlist);
   }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -101,10 +92,8 @@ function App() {
       </main>
       <div className="footer">
         <Footer />
-
       </div>
     </div>
-
   );
 }
 export default App;
