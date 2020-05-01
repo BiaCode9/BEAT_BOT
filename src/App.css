@@ -75,7 +75,7 @@ ul {
 }
 
 input {  
-  font-size: 22px;
+  font-size: 24px;
   font-style: strong;
   color: black;
   height: 20px;
@@ -98,14 +98,20 @@ input {
   box-shadow: 2px 3px purple;
   }
 
+  /* Button:hover  */
+
 
   @media only screen and (max-width: 768px) {
-    body {
-      background-color: lightblue;
+    input {
+      width: 250px; 
+      font-size: 20px;
     }
   
   }
   
   @media only screen and (max-width: 1024px) {
-    
+    input {
+    width: 275px;
+    font-size: 22px;
   }
+}
