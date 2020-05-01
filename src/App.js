@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import axios from "axios";
-import Footer from './components/Footer';
 import Header from './components/Header';
 import Searchresults from './components/searchresults';
 import Button from './components/Button';
@@ -10,6 +9,7 @@ import Playlist from './Playlist';
 import NameBar from './components/NameBar';
 import SearchBar from './components/SearchBar';
 import NavBar from './components/NavBar';
+import Footer from './components/Footer';
 
 
 
