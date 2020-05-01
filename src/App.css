@@ -14,6 +14,7 @@ border: 1px solid black;
   border: 1px solid white;
   color: white;
   font-size: 8px;
+
 }
 
 .djname {
@@ -49,6 +50,7 @@ body {
 .navbar {
   display: flex;
   justify-content: flex-end;
+  flex-direction: row;
 }
 
 .links {
@@ -59,3 +61,11 @@ body {
 /* input {
 height: 100px;
 } */
+
+@media screen and (max-width: 780px) {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  
+}

@@ -1,15 +1,14 @@
-// import React from 'react';
-// import { storiesOf } from '@storybook/react';
+import React from 'react';
+import { storiesOf } from '@storybook/react';
 
-// import header from './components/header';
+import Header from './Header';
 
-// const style = {
-//   backgroundColor: '#0069D9',
-//   color: 'black',
-//   height: '50px',
-//   fontSize: '20px'
-// }
+const style = {
+  backgroundColor: "red",
+  color: 'black',
+  height: '50px',
+}
 
 
-// storiesOf('header', module)
-//   .add('header', () => <header label="header" style={style} />)
+storiesOf('Header', module)
+  .add('Header', () => <Header title="header" style={style} />)

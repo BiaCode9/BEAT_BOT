@@ -3,11 +3,13 @@ import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import axios from "axios";
 import Navbar from './components/navbar';
-import Footer from './components/footer';
-import Header from './components/header';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import Searchresults from './components/searchresults';
 import Button from './components/Button';
 import Playlist from './Playlist';
+import NameBar from './components/NameBar';
+import Searchbar from './components/SearchBar';
 
 // import { BrowserRouter as Router } from 'react-router-dom'
 function App() {
@@ -72,7 +74,7 @@ function App() {
 
 
         {nameFinished
-          ? <h1>{name}</h1>
+          ? <NameBar text={name} />
           : <div>
             <form onSubmit={(e) => setNameFinished(true)}>
               <input
