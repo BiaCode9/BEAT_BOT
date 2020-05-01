@@ -9,9 +9,10 @@ import Searchresults from './components/searchresults';
 import Button from './components/Button';
 import Playlist from './Playlist';
 import NameBar from './components/NameBar';
-import Searchbar from './components/SearchBar';
+import SearchBar from './components/SearchBar';
 
-// import { BrowserRouter as Router } from 'react-router-dom'
+
+
 function App() {
   const [name, setName] = useState('');
   const [nameFinished, setNameFinished] = useState(false);
@@ -29,7 +30,7 @@ function App() {
       url: `https://ws.audioscrobbler.com/2.0/?method=track.search&track=${search}&api_key=9357323b21f3ac3a16289e7e62479e88&format=json`,
       params: {
         track: search,
-        limit: 15
+        limit: 20
       }
     })
 
@@ -81,6 +82,7 @@ function App() {
           }
           <form className="gettracks"
             onSubmit={getTracks}>
+            <SearchBar />
             <input
               type="text"
               placeholder="Track Search"

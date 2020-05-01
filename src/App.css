@@ -6,16 +6,14 @@ header {
   top: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, .5);
-  color: magenta;
-  width: 100%;
-  
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  width: 100%;  
+  font-size: 20px;
 }
 
 p {
 border: 1px solid black;
-
 }
-
 
 #copyright {
 height: 40px;
@@ -24,7 +22,6 @@ height: 40px;
 .djname {
  display: flex;
   flex-direction: column;
-  
 }
 
 .playlist {
@@ -42,21 +39,6 @@ body {
   background-attachment: fixed;
 }
 
-.button {
-  background-color: '#0069D9';
-  color: 'purple';
-  border-radius: '20px';
-  padding: '25px 50px';
-  font-size: '20px';
-}
-
-/* li a {
-  /* display: in-line; */
-  /* width: 60px;
-  color: white;
-  float: left;
-*/ 
-
 ul {
   list-style-type: none;
   display: flex;
@@ -66,7 +48,6 @@ ul {
 .navbar {
   display: flex;
   justify-content: flex-end;
-  /* flex-direction: row; */
   justify-content: space-between;
 }
 
@@ -81,8 +62,8 @@ ul {
 
 .footer {
   border: 1px solid purple; 
-  color: magenta;
-  font-size: 8px;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  font-size: 10px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -93,16 +74,7 @@ ul {
   background-color: rgba(0, 0, 0, .8);
 }
 
-@media screen and (max-width: 780px) {
-  
-}
-
-@media screen and (max-width: 1000px) {
-  
-}
-
-input {
-  
+input {  
   font-size: 22px;
   font-style: strong;
   color: black;
@@ -119,7 +91,6 @@ input {
 
   Button {
   background-color: rgba(0, 105,217, .5);
-
   color: purple;
   border-radius: 20px;
   padding: 25px 50px;
@@ -128,8 +99,13 @@ input {
   }
 
 
-/* 
-Namebar {
-font-size: 40px;
-
-} */
+  @media only screen and (max-width: 768px) {
+    body {
+      background-color: lightblue;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    
+  }
