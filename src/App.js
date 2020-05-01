@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Route } from 'react-router-dom';
 import './App.css';
 import axios from "axios";
-import Searchresults from './components/searchresults';
+import SearchResults from './components/searchresults';
 import Button from './components/Button';
 import Playlist from './Playlist';
 import NameBar from './components/NameBar';
@@ -82,7 +82,7 @@ function App() {
           </form>
           <div>
             <Route exact path='/'>
-              {song.length ? <Searchresults
+              {song.length ? <SearchResults
                 tracks={song}
                 addToPlaylist={addToPlaylist}
               /> : null}

@@ -1,16 +1,18 @@
 import React from 'react';
 import { Link } from "react-router-dom"
 import './searchresults.css';
-const searchResults = (props) => {
+const SearchResults = (props) => {
   return (
-    <>
+    <div className="container">
       {
         props.tracks.map((item, index) => (
           <div className="searchResults">
-            <Link to={`/songs/${index}`}>
-              <h1>{item.name}</h1>
-            </Link>
-            <h2>{item.artist}</h2>
+            <div className="artistInfo">
+              <Link to={`/songs/${index}`}>
+                <h1>{item.name}</h1>
+              </Link>
+              <h2>{item.artist}</h2>
+            </div>
             <button onClick={() => props.addToPlaylist(item)}>+ Add to Playlist
             </button>
             <Link to={`/Playlist/${index}`}>
@@ -20,10 +22,10 @@ const searchResults = (props) => {
         )
         )
       }
-    </>
+    </div>
   )
 }
-export default searchResults;
+export default SearchResults;
 
 
 
