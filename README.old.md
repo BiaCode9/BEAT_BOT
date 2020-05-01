@@ -86,13 +86,14 @@ src
       |__ images
       |__ wireframes
 |__ components/
-      |__ App.jsx
-      |__ Header.jsx
-      |__ Name.jsx
-      |__ Searchbar.jsx
-      |__ Playlist.jsx
-      |__ Searchbutton.jsx
-      |__ Footer.jsx
+      |__ App.js
+      |__ Header.js
+      |__ NameBar.js
+      |__ SearchBar.js
+      |__ Playlist.js
+      |__ SearchBar.js
+      |__ Navbar.js
+      |__ Footer.js
 ```
 
 <br>
@@ -117,17 +118,17 @@ src
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Pseudocode          |    M     |     2 hrs      |     TBD       |     TBD     |
-| Nav Bar             |    L     |     2 hr       |     TBD       |     TBD     |
+| Nav Bar             |    L     |     3 hr       |     TBD       |     TBD     |
 | Footer              |    L     |     2 hr       |     TBD       |     TBD     |
 | Basic React Code    |    H     |     6 hrs      |     TBD       |     TBD     |
-| Add Clickable Buttons |  M     |     5 hrs      |     TBD       |     TBD     |
+| Add Clickable Buttons |  M     |     6 hrs      |     TBD       |     TBD     |
 | Basic CSS Styling   |    M     |     6 hrs      |     TBD       |     TBD     |
-| Button Styling      |    H     |     4 hrs      |     TBD       |     TBD     |
+| Button Styling      |    H     |     6 hrs      |     TBD       |     TBD     |
 | Add Playlist        |    H     |     6 hrs      |     TBD       |     TBD     ||
-| DJ Name placeholder |    L     |     3 hrs      |     TBD       |     TBD     |
+| DJ Name placeholder |    L     |     4 hrs      |     TBD       |     TBD     |
 | Working with API    |    H     |     6 hrs      |     TBD       |     TBD     |
 | Storybook component |    H     |     8 hrs      |     TBD       |     TBD     |
-| TOTAL               |          |     50 hrs     |     TBD       |     TBD     |
+| TOTAL               |          |     55 hrs     |     TBD       |     TBD     |
 
 <br>
 
