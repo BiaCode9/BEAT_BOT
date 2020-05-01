@@ -1,6 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-
 import Button from './Button';
 
 const style = {
@@ -11,7 +10,6 @@ const style = {
   fontSize: '20px',
   boxShadow: '2px 3px purple'
 }
-
 
 storiesOf('Button', module)
   .add('+ Add Song', () => <Button label="+ Add Song" style={style} />)

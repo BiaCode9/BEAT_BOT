@@ -1,6 +1,5 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-
 import Footer from './Footer';
 
 const style = {
@@ -15,7 +14,6 @@ const style = {
   bottom: '0',
   width: '100%',
 }
-
 
 storiesOf('Footer', module)
   .add('Footer', () => <Footer title="Copyright DJ BIA BIA" style={style} />)

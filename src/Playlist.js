@@ -11,14 +11,6 @@ const Playlist = () => {
     // refer to ternary condition for songs.length */}
 
 
-      {/* {track.map(track =>
-            <Playlist
-              key={response.data.results.trackmatches.track}
-              track={track}
-            />
-          )} */}
-
-
     </h1>
   )
 }

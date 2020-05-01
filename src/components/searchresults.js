@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { withRouter } from 'react-router-dom';
 import { Link } from "react-router-dom"
 import './searchresults.css';
 const searchResults = (props) => {
@@ -12,13 +11,11 @@ const searchResults = (props) => {
               <h1>{item.name}</h1>
             </Link>
             <h2>{item.artist}</h2>
-
-
-
-            <button onClick={() => props.addToPlaylist(item)}>+ Add to Playlist</button>
-            <Link to={`/Playlist/${index}`}><h2>{props.items && props.item.name}</h2></Link>
-
-
+            <button onClick={() => props.addToPlaylist(item)}>+ Add to Playlist
+            </button>
+            <Link to={`/Playlist/${index}`}>
+              <h2>{props.items && props.item.name}</h2>
+            </Link>
           </div>
         )
         )
@@ -27,7 +24,7 @@ const searchResults = (props) => {
   )
 }
 export default searchResults;
-// export default withRouter(searchResults);
+
 
 
 
