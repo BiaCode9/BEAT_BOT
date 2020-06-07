@@ -1,7 +1,7 @@
 ![Astronaut_Crowd](https://www.amny.com/wp-content/uploads/2019/12/Astronaut.jpg)
 
 
-# BEAT BOX
+# BEAT BOT
 
 # PROJECT 2 README <!-- omit in toc -->
 
